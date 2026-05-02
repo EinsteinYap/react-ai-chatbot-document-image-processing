@@ -22,6 +22,10 @@ go to firebase create your own app config
 below are the link 
 https://console.firebase.google.com/
 
+go to https://console.firebase.google.com/u/0/project/"your project name"/ailogic/settings
+
+to enable Gemini Developer API
+
 go to "firebase - change it " folder to config it" and remove the "- change it" for git ignore
 
 
