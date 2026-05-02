@@ -12,6 +12,17 @@ or you can use nvm to deal with it.
 
 # create your own .env file 
 VITE_API_URL=(your google Gemini api)
+This will exposes your key when u run your react app
+
+## More secure way to hide your Gemini Key
+go to firebase create your own app config
+
+below are the link 
+https://console.firebase.google.com/
+
+go to "firebase - change it " folder to config it" and remove the "- change it" for git ignore
+
+
 
 # Try it
 Test and try it and implement to your own React project
