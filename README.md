@@ -10,11 +10,13 @@ you can search where this model local and change it to your desire model
 # Install npm v24.15.0
 or you can use nvm to deal with it.
 
-# create your own .env file 
+# create your own .env file (insecure way)
 VITE_API_URL=(your google Gemini api)
 This will exposes your key when u run your react app
 
-## More secure way to hide your Gemini Key
+## More secure way to hide your Gemini Key with firebase
+replace the component Summary.jsx and Chat.jsx to firebase version
+
 go to firebase create your own app config
 
 below are the link 

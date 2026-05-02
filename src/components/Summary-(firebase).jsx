@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { geminiModel } from "../../firebase/config.js"
 import Loader from "./loader";
 
 function Summary({ file }) {
 
 
-    const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_URL);
-    const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
+    
     const [summary, setSummary] = useState("");
     const [status, setStatus] = useState("idle");
 
     async function getSummary() {
         setStatus("loading");
         try {
-            const result = await model.generateContent([
+            const result = await geminiModel.generateContent([
                 {
                     inlineData: {
                         data: file.file,

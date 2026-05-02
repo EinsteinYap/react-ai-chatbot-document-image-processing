@@ -1,10 +1,9 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { geminiModel } from "../../firebase/config.js"
 import './Chat.css'
 import { useState } from 'react'
 
 function Chat({file}) {
-    const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_URL);
-    const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
+    
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
 
@@ -15,7 +14,7 @@ function Chat({file}) {
             setMessages(chatMessages);
 
             try {
-                const result = await model.generateContent([
+                const result = await geminiModel.generateContent([
                   {
                       inlineData: {
                           data: file.file,
