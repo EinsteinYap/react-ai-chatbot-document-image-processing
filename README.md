@@ -1,16 +1,17 @@
-# React + Vite
+# React + Vite AI chatbot Document and Image processing
+This project is for React Developer who dont know how to create AI Chat bot into their React project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here just go through and use this component for Google Gemini. 
 
-Currently, two official plugins are available:
+Model use is "gemini-3-flash-preview" 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+you can search where this model local and change it to your desire model
 
-## React Compiler
+# Install npm v24.15.0
+or you can use nvm to deal with it.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# create your own .env file 
+VITE_API_URL=(your google Gemini api)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Try it
+Test and try it and implement to your own React project
